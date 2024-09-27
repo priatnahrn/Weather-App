@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L!N - Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-container">
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Search for a location"
+            id="location-search"
+            aria-label="Search for a location"
+          />
+          <button type="submit" id="search-button" aria-label="Search">
+            Search
+          </button>
+        </div>
+
+        <section class="weather-info">
+          <div class="location-time">
+            <h1 class="city-name"></h1>
+            <p class="date-time"></p>
+          </div>
+          <div class="weather-icon">
+            <img src="" alt="" id="weather-icon" />
+          </div>
+          <div class="weather-condition">
+            <h1 class="current-temperature"></h1>
+            <p class="current-condition"></p>
+          </div>
+        </section>
+
+        <section class="weekly-weather">
+          <h2 class="title">Weekly Forecast</h2>
+          <div class="weather-list"></div>
+        </section>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
